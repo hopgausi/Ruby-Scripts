@@ -1,5 +1,5 @@
 user_db = [
-    {username: "hopgausi", password: "blackwidow"},
+    {username: "hopgausi", password: "123456"},
     {username: "smigo", password: "1234"}
 ]
 
@@ -22,17 +22,11 @@ while run_counter > 0
             exit = true
         end
     end
-    if exit
-        break
-    end
+    break if exit
     if run_counter > 1
         puts "Incorrect creditials, press q to quit or any other key to continue"
         choice = gets.chomp
-            if choice == "q"
-                break
-            else 
-                run_counter -= 1
-            end
+        choice == "q"? break : run_counter -= 1
     else
         run_counter -= 1
         puts "Max trials reached. programm exited!" 
