@@ -1,5 +1,5 @@
 movies = {
-  protegy: 2
+  protegy: 1
 }
 run = true 
 while run
